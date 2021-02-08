@@ -16,6 +16,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { FormContainerComponent } from './form-container/form-container.component';
 import { HeroFormComponent } from './templateForm/hero-form/hero-form.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HeroFormComponent } from './templateForm/hero-form/hero-form.component'
     HeroSearchComponent,
     FormContainerComponent,
     HeroFormComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
