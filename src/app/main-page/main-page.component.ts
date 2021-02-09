@@ -12,7 +12,7 @@ export class MainPageComponent implements OnInit {
       route: '/tour/dashboard',
       progress: 100,
     },
-    { title: 'Advanced Routing', route: '', progress: 0 },
+    { title: 'Advanced Routing', route: '/routing', progress: 5 },
     { title: 'Template-driven Form', route: '/form', progress: 100 },
   ];
 

@@ -18,6 +18,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroFormComponent } from './templateForm/hero-form/hero-form.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HeroesWrapperComponent } from './heroes-wrapper/heroes-wrapper.component';
+import { AngularRouterSampleComponent } from './routing/angular-router-sample/angular-router-sample.component';
+import { CrisisListComponent } from './routing/crisis-list/crisis-list.component';
+import { HeroListComponent } from './routing/hero-list/hero-list.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { HeroesWrapperComponent } from './heroes-wrapper/heroes-wrapper.componen
     HeroFormComponent,
     MainPageComponent,
     HeroesWrapperComponent,
+    AngularRouterSampleComponent,
+    CrisisListComponent,
+    HeroListComponent,
   ],
   imports: [
     BrowserModule,
