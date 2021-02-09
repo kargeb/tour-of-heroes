@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'tour/dashboard', component: DashboardComponent },
   { path: 'tour/detail/:id', component: HeroDetailComponent },
   { path: 'form', component: HeroFormComponent },
+  { path: '**', component: MainPageComponent },
 ];
 
 @NgModule({

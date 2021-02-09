@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
   pages = [
-    { title: 'Tour of Heroes', route: '/tour/dashboard', progress: 100 },
+    {
+      title: 'Tour of Heroes - Basics',
+      route: '/tour/dashboard',
+      progress: 100,
+    },
     { title: 'Advanced Routing', route: '', progress: 0 },
-    { title: 'Template-driven Forms', route: '/form', progress: 50 },
+    { title: 'Template-driven Form', route: '/form', progress: 100 },
   ];
 
   progress: number = 30;
