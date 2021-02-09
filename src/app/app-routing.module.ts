@@ -4,6 +4,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { HeroFormComponent } from './templateForm/hero-form/hero-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'tour/heroes', component: HeroesComponent },
   { path: 'tour/dashboard', component: DashboardComponent },
   { path: 'tour/detail/:id', component: HeroDetailComponent },
+  { path: 'form', component: HeroFormComponent },
 ];
 
 @NgModule({
