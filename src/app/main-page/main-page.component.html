@@ -1,0 +1,25 @@
+<h1>Angular Tutorial</h1>
+<ul class="container">
+  <li *ngFor="let page of pages" class="item shadow">
+    <img
+      class=""
+      src="../assets/Angular_full_color_logo.svg"
+      alt="Angular icon"
+      width="160"
+      height="160"
+    />
+    <h2>{{ page.title }}</h2>
+    <div class="progress-container">
+      <div class="background">
+        <div class="progress" [style.width.%]="page.progress">
+          <div class="content">{{ page.progress }}%</div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center">
+      <a class="btn btn-default" [routerLink]="page.route" role="button"
+        >Open</a
+      >
+    </p>
+  </li>
+</ul>

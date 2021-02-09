@@ -14,6 +14,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+// import { FormContainerComponent } from './form-container/form-container.component';
+import { HeroFormComponent } from './templateForm/hero-form/hero-form.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { HeroesWrapperComponent } from './heroes-wrapper/heroes-wrapper.component';
+import { AngularRouterSampleComponent } from './routing/angular-router-sample/angular-router-sample.component';
+import { CrisisListComponent } from './routing/crisis-list/crisis-list.component';
+import { HeroListComponent } from './routing/hero-list/hero-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +30,12 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
+    HeroFormComponent,
+    MainPageComponent,
+    HeroesWrapperComponent,
+    AngularRouterSampleComponent,
+    CrisisListComponent,
+    HeroListComponent,
   ],
   imports: [
     BrowserModule,
