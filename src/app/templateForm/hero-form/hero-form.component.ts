@@ -25,9 +25,5 @@ export class HeroFormComponent {
     this.model = new FormHero(42, '', '');
   }
 
-  showFormControls(form: any) {
-    return form && form.controls.name && form.controls.name.value; // Dr. IQ
-  }
-
   constructor() {}
 }
