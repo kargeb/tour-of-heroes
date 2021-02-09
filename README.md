@@ -1,6 +1,8 @@
 ## Demo
 
-[Tour of Heroes](https://condescending-davinci-bbc357.netlify.app/)
+[Tour of Heroes](https://vigilant-curran-dd3bd8.netlify.app/)
+
+<br><br>
 
 # AngularTourOfHeroes
 
