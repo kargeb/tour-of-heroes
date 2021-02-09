@@ -9,7 +9,7 @@ export class MainPageComponent implements OnInit {
   pages = [
     { title: 'Tour of Heroes', route: '/tour/dashboard', progress: 100 },
     { title: 'Advanced Routing', route: '', progress: 0 },
-    { title: 'Template-driven Forms', route: '', progress: 50 },
+    { title: 'Template-driven Forms', route: '/form', progress: 50 },
   ];
 
   progress: number = 30;
