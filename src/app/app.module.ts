@@ -21,6 +21,8 @@ import { HeroesWrapperComponent } from './heroes-wrapper/heroes-wrapper.componen
 import { AngularRouterSampleComponent } from './routing/angular-router-sample/angular-router-sample.component';
 import { CrisisListComponent } from './routing/crisis-list/crisis-list.component';
 import { HeroListComponent } from './routing/hero-list/hero-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BackToMainPageComponent } from './shared/back-to-main-page/back-to-main-page.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { HeroListComponent } from './routing/hero-list/hero-list.component';
     AngularRouterSampleComponent,
     CrisisListComponent,
     HeroListComponent,
+    PageNotFoundComponent,
+    BackToMainPageComponent,
   ],
   imports: [
     BrowserModule,
