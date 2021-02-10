@@ -26,6 +26,7 @@ import { BackToMainPageComponent } from './shared/back-to-main-page/back-to-main
 import { RoutingWrapperComponent } from './routing/routing-wrapper/routing-wrapper.component';
 import { HeroesModule } from './routing/heroes/heroes.module';
 import { HeroesRoutingModule } from './routing/heroes/heroes-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { HeroesRoutingModule } from './routing/heroes/heroes-routing.module';
       dataEncapsulation: false,
     }),
     HeroesModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
