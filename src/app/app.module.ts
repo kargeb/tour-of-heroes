@@ -20,10 +20,12 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { HeroesWrapperComponent } from './heroes-wrapper/heroes-wrapper.component';
 import { AngularRouterSampleComponent } from './routing/angular-router-sample/angular-router-sample.component';
 import { CrisisListComponent } from './routing/crisis-list/crisis-list.component';
-import { HeroListComponent } from './routing/hero-list/hero-list.component';
+import { HeroListComponent } from './routing/heroes/hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BackToMainPageComponent } from './shared/back-to-main-page/back-to-main-page.component';
 import { RoutingWrapperComponent } from './routing/routing-wrapper/routing-wrapper.component';
+import { HeroesModule } from './routing/heroes/heroes.module';
+import { HeroesRoutingModule } from './routing/heroes/heroes-routing.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { RoutingWrapperComponent } from './routing/routing-wrapper/routing-wrapp
     HeroesWrapperComponent,
     AngularRouterSampleComponent,
     CrisisListComponent,
-    HeroListComponent,
+    // HeroListComponent,
     PageNotFoundComponent,
     BackToMainPageComponent,
     RoutingWrapperComponent,
@@ -46,11 +48,13 @@ import { RoutingWrapperComponent } from './routing/routing-wrapper/routing-wrapp
   imports: [
     BrowserModule,
     FormsModule,
+    HeroesRoutingModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
+    HeroesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
