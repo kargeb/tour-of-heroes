@@ -3,6 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../../message.service';
+import { ActivatedRoute } from '@angular/router';
+
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-hero-list',
@@ -14,13 +18,25 @@ export class HeroListComponent implements OnInit {
 
   heroes: Hero[];
 
+  heroes$: Observable<Hero[]>;
+  selectedId: number;
+
   constructor(
     private heroService: HeroService,
-    private messageService: MessageService
+    private service: HeroService,
+    private messageService: MessageService,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.getHeroes();
+    this.heroes$ = this.route.paramMap.pipe(
+      switchMap((params) => {
+        // (+) before `params.get()` turns the string into a number
+        this.selectedId = +params.get('id');
+        return this.service.getHeroes();
+      })
+    );
+    // this.getHeroes();
   }
 
   onSelect(hero: Hero): void {

@@ -21,14 +21,7 @@ export class HeroService {
 
   getHero(id: number | string) {
     return this.getHeroes().pipe(
-      // (+) before `id` turns the string into a number
       map((heroes: Hero[]) => heroes.find((hero) => hero.id === +id))
     );
   }
 }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

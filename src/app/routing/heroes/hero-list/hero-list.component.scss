@@ -26,7 +26,7 @@
 }
 .heroes li.selected:hover {
   background-color: #bbd8dc;
-  color: white;
+  //   color: white;
 }
 .heroes .badge {
   display: inline-block;
@@ -75,8 +75,10 @@
   }
 }
 
-/*
-  Copyright Google LLC. All Rights Reserved.
-  Use of this source code is governed by an MIT-style license that
-  can be found in the LICENSE file at https://angular.io/license
-  */
+// .heroes li.selected {
+//     background-color: #CFD8DC;
+//     color: white;
+//   }
+//   .heroes li.selected:hover {
+//     background-color: #BBD8DC;
+//   }
