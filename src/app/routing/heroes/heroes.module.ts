@@ -6,6 +6,7 @@ import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { RoutingWrapperComponent } from '../routing-wrapper/routing-wrapper.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,11 @@ import { RoutingWrapperComponent } from '../routing-wrapper/routing-wrapper.comp
     HeroDetailComponent,
     // RoutingWrapperComponent,
   ],
-  imports: [CommonModule, HeroesRoutingModule, FormsModule],
+  imports: [
+    CommonModule,
+    HeroesRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+  ],
 })
 export class HeroesModule {}

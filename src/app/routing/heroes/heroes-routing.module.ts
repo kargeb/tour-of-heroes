@@ -5,8 +5,16 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 const heroesRoutes: Routes = [
-  { path: 'routing/heroes', component: HeroListComponent },
-  { path: 'routing/hero/:id', component: HeroDetailComponent },
+  {
+    path: 'routing/heroes',
+    component: HeroListComponent,
+    data: { animation: 'heroes' },
+  },
+  {
+    path: 'routing/hero/:id',
+    component: HeroDetailComponent,
+    data: { animation: 'hero' },
+  },
 ];
 
 @NgModule({
