@@ -73,10 +73,6 @@ export class HeroService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
-  // getHero(id: number): Observable<Hero> {
-  //   this.messageService.add(`HeroService: fetched hero id=${id}`);
-  //   return of(HEROES.find((hero) => hero.id === id));
-  // }
 
   private heroesUrl = 'api/heroes';
 
