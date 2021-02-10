@@ -33,7 +33,7 @@ const crisisCenterRoutes: Routes = [
   imports: [RouterModule.forChild(crisisCenterRoutes)],
   exports: [RouterModule],
 })
-export class CrisisRoutingModule {}
+export class CrisisCenterRoutingModule {}
 
 // const crisisCenterRoutes: Routes = [
 //   {
@@ -53,4 +53,4 @@ export class CrisisRoutingModule {}
 //   import { CrisisListComponent } from './../crisis-list/crisis-list.component';
 
 // })
-// export class CrisisRoutingModule {}
+// export class CrisisCenterRoutingModule  {}

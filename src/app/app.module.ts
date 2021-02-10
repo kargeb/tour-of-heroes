@@ -28,6 +28,8 @@ import { HeroesModule } from './routing/heroes/heroes.module';
 import { HeroesRoutingModule } from './routing/heroes/heroes-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// import { ComposeMessageComponent } from './compose-message/compose-message.component';
+
 // import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { CrisisCenterModule } from './routing/crisis-center/crisis-center.module';
 
@@ -48,12 +50,13 @@ import { CrisisCenterModule } from './routing/crisis-center/crisis-center.module
     PageNotFoundComponent,
     BackToMainPageComponent,
     RoutingWrapperComponent,
+    // ComposeMessageComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HeroesRoutingModule,
     CrisisCenterModule,
+    HeroesRoutingModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
