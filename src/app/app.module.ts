@@ -23,6 +23,7 @@ import { CrisisListComponent } from './routing/crisis-list/crisis-list.component
 import { HeroListComponent } from './routing/hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BackToMainPageComponent } from './shared/back-to-main-page/back-to-main-page.component';
+import { RoutingWrapperComponent } from './routing/routing-wrapper/routing-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { BackToMainPageComponent } from './shared/back-to-main-page/back-to-main
     HeroListComponent,
     PageNotFoundComponent,
     BackToMainPageComponent,
+    RoutingWrapperComponent,
   ],
   imports: [
     BrowserModule,
