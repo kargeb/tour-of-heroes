@@ -28,6 +28,9 @@ import { HeroesModule } from './routing/heroes/heroes.module';
 import { HeroesRoutingModule } from './routing/heroes/heroes-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// import { CrisisCenterModule } from './crisis-center/crisis-center.module';
+import { CrisisCenterModule } from './routing/crisis-center/crisis-center.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +53,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     FormsModule,
     HeroesRoutingModule,
+    CrisisCenterModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {

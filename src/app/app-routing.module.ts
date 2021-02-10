@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'tour/detail/:id', component: HeroDetailComponent },
   { path: 'form', component: HeroFormComponent },
   { path: 'routing', component: HeroListComponent },
-  { path: 'routing/crisis-center', component: CrisisListComponent },
+  // { path: 'routing/crisis-center', component: CrisisListComponent },
   // { path: 'routing/heroes', component: HeroListComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
