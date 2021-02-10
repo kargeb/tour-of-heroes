@@ -9,6 +9,7 @@ import { AngularRouterSampleComponent } from './routing/angular-router-sample/an
 import { CrisisListComponent } from './routing/crisis-list/crisis-list.component';
 import { HeroListComponent } from './routing/heroes/hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 // import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 const routes: Routes = [
@@ -19,11 +20,11 @@ const routes: Routes = [
   { path: 'tour/detail/:id', component: HeroDetailComponent },
   { path: 'form', component: HeroFormComponent },
   { path: 'routing', component: HeroListComponent },
-  // {
-  //   path: 'compose',
-  //   component: ComposeMessageComponent,
-  //   outlet: 'popup',
-  // },
+  {
+    path: 'compose',
+    component: ComposeMessageComponent,
+    outlet: 'popup',
+  },
   // { path: 'routing/crisis-center', component: CrisisListComponent },
   // { path: 'routing/heroes', component: HeroListComponent },
   { path: '**', component: PageNotFoundComponent },

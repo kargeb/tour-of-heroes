@@ -32,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { CrisisCenterModule } from './routing/crisis-center/crisis-center.module';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { CrisisCenterModule } from './routing/crisis-center/crisis-center.module
     PageNotFoundComponent,
     BackToMainPageComponent,
     RoutingWrapperComponent,
+    ComposeMessageComponent,
     // ComposeMessageComponent,
   ],
   imports: [
