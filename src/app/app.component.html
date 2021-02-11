@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<!-- <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a> -->
+<a (click)="showMessageBox()">Contact</a>
+<router-outlet name="popup"></router-outlet>
+<!-- <button (click)="showMessageBox()">Show params</button> -->
+<!-- <router-outlet></router-outlet> -->
